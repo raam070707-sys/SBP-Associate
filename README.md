@@ -1,12 +1,13 @@
-# SBP-Associate
-SBP Associates official website providing legal consultation ,documentation,and professional legal suport.
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SBP & Associates — Advocate & Legal Consultants</title>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&family=Jost:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+<title>Advocate Baburam Kumar - Delhi High Court | Expert Legal Representation</title>
+<meta name="description" content="Baburam Kumar - AIBE Qualified Advocate. Delhi High Court, Tis Hazari Courts, DRT-I. Civil, Criminal, Property, Arbitration & Corporate Law.">
+<meta property="og:title" content="Advocate Baburam Kumar - Delhi High Court & Tis Hazari Courts">
+<meta property="og:description" content="Expert legal representation in Civil, Criminal, Property disputes & Arbitration before Delhi High Court and District Courts.">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,600&family=Jost:wght@200;300;400;500;600&display=swap" rel="stylesheet">
 <style>
   :root {
     --gold: #b8972a;
@@ -21,9 +22,8 @@ SBP Associates official website providing legal consultation ,documentation,and 
   }
 
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
   html { scroll-behavior: smooth; }
-
+  
   body {
     background: var(--deep);
     color: var(--warm-white);
@@ -32,7 +32,6 @@ SBP Associates official website providing legal consultation ,documentation,and 
     overflow-x: hidden;
   }
 
-  /* ─── NOISE TEXTURE OVERLAY ─── */
   body::before {
     content: '';
     position: fixed;
@@ -43,7 +42,7 @@ SBP Associates official website providing legal consultation ,documentation,and 
     opacity: 0.4;
   }
 
-  /* ─── NAVBAR ─── */
+  /* NAV */
   nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -51,120 +50,158 @@ SBP Associates official website providing legal consultation ,documentation,and 
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.4rem 4rem;
-    background: rgba(13,13,13,0.85);
+    padding: 1.2rem 3rem;
+    background: rgba(13,13,13,0.92);
     backdrop-filter: blur(20px);
     border-bottom: 1px solid var(--border);
-    transition: padding 0.3s;
+    transition: all 0.3s;
   }
 
-  .nav-logo {
+  .nav-brand {
     text-decoration: none;
     display: flex;
     align-items: center;
+    gap: 12px;
   }
 
-  .nav-logo svg {
-    height: 42px;
-    width: auto;
+  .nav-brand-icon {
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1.5px solid var(--gold);
+    border-radius: 50%;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.3rem;
+    color: var(--gold-light);
+    font-weight: 600;
+  }
+
+  .nav-brand-text {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: var(--warm-white);
+    letter-spacing: 0.02em;
+  }
+
+  .nav-brand-text .sub {
+    display: block;
+    font-family: 'Jost', sans-serif;
+    font-size: 0.65rem;
+    color: var(--text-muted);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-top: 2px;
   }
 
   .nav-links {
     display: flex;
-    gap: 2.5rem;
+    gap: 2.2rem;
     list-style: none;
+    margin-right: auto;
+    margin-left: 3rem;
   }
 
   .nav-links a {
-    font-family: 'Jost', sans-serif;
     font-size: 0.72rem;
     font-weight: 400;
     letter-spacing: 0.18em;
     text-transform: uppercase;
-    color: rgba(250,248,244,0.7);
+    color: rgba(250,248,244,0.6);
     text-decoration: none;
     transition: color 0.3s;
   }
 
   .nav-links a:hover { color: var(--gold-light); }
 
+  .nav-right {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
   .nav-cta {
-    font-size: 0.72rem;
+    font-size: 0.7rem;
     font-weight: 500;
-    letter-spacing: 0.14em;
+    letter-spacing: 0.15em;
     text-transform: uppercase;
-    padding: 0.6rem 1.6rem;
+    padding: 0.65rem 1.5rem;
     border: 1px solid var(--gold);
     color: var(--gold-light);
     text-decoration: none;
     transition: all 0.3s;
+    display: inline-block;
   }
 
   .nav-cta:hover {
     background: var(--gold);
     color: var(--deep);
+    box-shadow: 0 8px 20px rgba(184,151,42,0.3);
   }
 
-  /* ─── HERO ─── */
+  .nav-social {
+    display: flex;
+    gap: 1.2rem;
+    align-items: center;
+  }
+
+  .nav-social a {
+    color: rgba(250,248,244,0.6);
+    transition: color 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav-social a:hover {
+    color: var(--gold-light);
+  }
+
+  .nav-social svg {
+    width: 16px;
+    height: 16px;
+    stroke: currentColor;
+    fill: none;
+  }
+
+  /* HERO */
   .hero {
     min-height: 100vh;
     display: flex;
     align-items: center;
     position: relative;
     overflow: hidden;
-    padding: 8rem 4rem 6rem;
+    padding: 7rem 3rem 4rem;
+    margin-top: 60px;
   }
 
   .hero-bg {
     position: absolute;
     inset: 0;
     background:
-      radial-gradient(ellipse 70% 60% at 70% 50%, rgba(184,151,42,0.07) 0%, transparent 70%),
-      radial-gradient(ellipse 40% 40% at 20% 80%, rgba(184,151,42,0.05) 0%, transparent 60%),
+      radial-gradient(ellipse 700px 400px at 70% 40%, rgba(184,151,42,0.08) 0%, transparent 65%),
       linear-gradient(180deg, #0d0d0d 0%, #111008 100%);
   }
 
-  .hero-lines {
-    position: absolute;
-    inset: 0;
-    overflow: hidden;
-  }
-
-  .hero-lines::before {
-    content: '';
-    position: absolute;
-    top: -10%;
-    right: 8%;
-    width: 1px;
-    height: 120%;
-    background: linear-gradient(180deg, transparent, rgba(184,151,42,0.3), transparent);
-    animation: lineRise 3s ease-out forwards;
-  }
-
-  .hero-lines::after {
-    content: '';
-    position: absolute;
-    top: -10%;
-    right: 12%;
-    width: 1px;
-    height: 120%;
-    background: linear-gradient(180deg, transparent, rgba(184,151,42,0.12), transparent);
-    animation: lineRise 3s 0.4s ease-out forwards;
-  }
-
-  @keyframes lineRise {
-    from { opacity: 0; transform: translateY(30px); }
-    to { opacity: 1; transform: translateY(0); }
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
   }
 
   .hero-content {
-    position: relative;
-    max-width: 750px;
-    animation: heroIn 1.2s cubic-bezier(0.16,1,0.3,1) forwards;
+    animation: slideInUp 1s cubic-bezier(0.16,1,0.3,1) forwards;
     opacity: 0;
   }
 
-  @keyframes heroIn {
+  @keyframes slideInUp {
     from { opacity: 0; transform: translateY(40px); }
     to { opacity: 1; transform: translateY(0); }
   }
@@ -190,9 +227,9 @@ SBP Associates official website providing legal consultation ,documentation,and 
 
   .hero h1 {
     font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(3.5rem, 7vw, 6.5rem);
+    font-size: clamp(3rem, 6vw, 5.5rem);
     font-weight: 300;
-    line-height: 1.05;
+    line-height: 1.08;
     letter-spacing: -0.01em;
     margin-bottom: 1rem;
   }
@@ -202,22 +239,43 @@ SBP Associates official website providing legal consultation ,documentation,and 
     color: var(--gold-light);
   }
 
-  .hero-sub {
+  .hero-subtitle {
     font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(1.1rem, 2vw, 1.4rem);
+    font-size: 1.3rem;
     font-weight: 300;
     font-style: italic;
-    color: rgba(250,248,244,0.55);
-    margin-bottom: 2.5rem;
-    letter-spacing: 0.02em;
+    color: rgba(250,248,244,0.5);
+    margin-bottom: 2rem;
   }
 
   .hero-desc {
     font-size: 0.9rem;
     line-height: 1.8;
     color: rgba(250,248,244,0.6);
-    max-width: 500px;
+    max-width: 520px;
+    margin-bottom: 2.5rem;
+  }
+
+  .hero-creds {
+    display: flex;
+    gap: 1.8rem;
+    flex-wrap: wrap;
     margin-bottom: 3rem;
+    font-size: 0.8rem;
+    color: rgba(250,248,244,0.6);
+  }
+
+  .hero-creds span {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .cred-dot {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--gold);
   }
 
   .hero-actions {
@@ -226,10 +284,8 @@ SBP Associates official website providing legal consultation ,documentation,and 
     flex-wrap: wrap;
   }
 
-  .btn-primary {
-    padding: 0.9rem 2.4rem;
-    background: var(--gold);
-    color: var(--deep);
+  .btn {
+    padding: 0.9rem 2.2rem;
     font-family: 'Jost', sans-serif;
     font-size: 0.75rem;
     font-weight: 500;
@@ -240,26 +296,23 @@ SBP Associates official website providing legal consultation ,documentation,and 
     cursor: pointer;
     transition: all 0.3s;
     display: inline-block;
+    border-radius: 2px;
+  }
+
+  .btn-primary {
+    background: var(--gold);
+    color: var(--deep);
   }
 
   .btn-primary:hover {
     background: var(--gold-light);
     transform: translateY(-2px);
-    box-shadow: 0 12px 40px rgba(184,151,42,0.3);
+    box-shadow: 0 12px 35px rgba(184,151,42,0.3);
   }
 
   .btn-ghost {
-    padding: 0.9rem 2.4rem;
     border: 1px solid rgba(250,248,244,0.25);
     color: var(--warm-white);
-    font-family: 'Jost', sans-serif;
-    font-size: 0.75rem;
-    font-weight: 400;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    text-decoration: none;
-    transition: all 0.3s;
-    display: inline-block;
   }
 
   .btn-ghost:hover {
@@ -267,63 +320,82 @@ SBP Associates official website providing legal consultation ,documentation,and 
     color: var(--gold-light);
   }
 
-  /* Scales icon */
-  .scales-deco {
-    position: absolute;
-    right: 4rem;
-    top: 50%;
-    transform: translateY(-50%);
-    opacity: 0.06;
-    font-size: 22rem;
-    pointer-events: none;
+  .hero-portrait {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .portrait-frame {
+    width: 100%;
+    max-width: 300px;
+    aspect-ratio: 3/4;
+    border: 2px solid var(--border);
+    background: linear-gradient(135deg, rgba(184,151,42,0.08), rgba(184,151,42,0.02));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 4rem;
+    color: rgba(184,151,42,0.15);
     animation: float 6s ease-in-out infinite;
-    user-select: none;
   }
 
   @keyframes float {
-    0%, 100% { transform: translateY(-50%) rotate(-2deg); }
-    50% { transform: translateY(-54%) rotate(2deg); }
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
   }
 
-  /* ─── STATS STRIP ─── */
+  .portrait-caption {
+    text-align: center;
+    margin-top: 1.2rem;
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  /* STATS */
   .stats-strip {
     border-top: 1px solid var(--border);
     border-bottom: 1px solid var(--border);
-    background: rgba(255,255,255,0.02);
-    padding: 2.5rem 4rem;
+    background: rgba(255,255,255,0.01);
+    padding: 2.2rem 3rem;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 1rem;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
   }
 
   .stat-item {
     text-align: center;
     padding: 1rem;
-    border-right: 1px solid var(--border);
-    animation: fadeUp 0.8s ease-out forwards;
-    opacity: 0;
   }
-
-  .stat-item:last-child { border-right: none; }
 
   .stat-number {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 300;
     color: var(--gold-light);
     line-height: 1;
-    margin-bottom: 0.4rem;
+    margin-bottom: 0.5rem;
   }
 
   .stat-label {
-    font-size: 0.68rem;
-    letter-spacing: 0.2em;
+    font-size: 0.7rem;
+    letter-spacing: 0.15em;
     text-transform: uppercase;
     color: rgba(250,248,244,0.5);
   }
 
-  /* ─── SECTION SHARED ─── */
-  section { padding: 7rem 4rem; }
+  /* SECTIONS */
+  section {
+    padding: 6rem 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
 
   .section-tag {
     font-size: 0.65rem;
@@ -345,10 +417,10 @@ SBP Associates official website providing legal consultation ,documentation,and 
 
   .section-title {
     font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(2.2rem, 4vw, 3.8rem);
+    font-size: clamp(2.2rem, 4vw, 3.5rem);
     font-weight: 300;
     line-height: 1.1;
-    margin-bottom: 1.2rem;
+    margin-bottom: 1rem;
   }
 
   .section-title em {
@@ -356,13 +428,23 @@ SBP Associates official website providing legal consultation ,documentation,and 
     color: var(--gold-light);
   }
 
-  /* ─── ABOUT ─── */
+  .section-desc {
+    font-size: 0.9rem;
+    line-height: 1.8;
+    color: rgba(250,248,244,0.55);
+    margin-bottom: 3rem;
+    max-width: 650px;
+  }
+
+  /* ABOUT */
   #about {
+    background: var(--charcoal);
+  }
+
+  .about-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 5rem;
-    align-items: center;
-    background: var(--charcoal);
+    gap: 4rem;
   }
 
   .about-left p {
@@ -373,82 +455,84 @@ SBP Associates official website providing legal consultation ,documentation,and 
   }
 
   .about-right {
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
   }
 
-  .about-card {
+  .info-card {
     background: var(--mid);
     border: 1px solid var(--border);
-    padding: 2.5rem;
+    padding: 2rem;
     position: relative;
   }
 
-  .about-card::before {
+  .info-card::before {
     content: '';
     position: absolute;
     top: 0; left: 0;
-    width: 60px;
-    height: 3px;
+    width: 50px;
+    height: 2px;
     background: var(--gold);
   }
 
-  .about-card-quote {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.3rem;
-    font-style: italic;
-    font-weight: 300;
-    color: rgba(250,248,244,0.8);
-    line-height: 1.6;
-    margin-bottom: 1.5rem;
-  }
-
-  .about-courts {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.6rem;
-  }
-
-  .court-badge {
+  .info-label {
     font-size: 0.65rem;
-    letter-spacing: 0.15em;
+    letter-spacing: 0.2em;
     text-transform: uppercase;
-    padding: 0.4rem 0.9rem;
-    border: 1px solid var(--border);
-    color: var(--gold-pale);
+    color: var(--gold);
+    margin-bottom: 0.8rem;
   }
 
-  /* ─── PRACTICE AREAS ─── */
+  .info-value {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--warm-white);
+    margin-bottom: 0.8rem;
+  }
+
+  .info-text {
+    font-size: 0.85rem;
+    color: rgba(250,248,244,0.6);
+    line-height: 1.7;
+  }
+
+  .quote-block {
+    border-left: 3px solid var(--gold);
+    padding-left: 1.5rem;
+  }
+
+  .quote-block p {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 1.2rem;
+    color: var(--gold-light);
+    line-height: 1.6;
+  }
+
+  /* PRACTICE AREAS */
   #practice {
     background: var(--deep);
   }
 
-  .practice-header {
-    max-width: 600px;
-    margin-bottom: 4rem;
-  }
-
-  .practice-header p {
-    font-size: 0.9rem;
-    line-height: 1.8;
-    color: rgba(250,248,244,0.55);
-    margin-top: 1rem;
-  }
-
   .practice-grid {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 1px;
     background: var(--border);
     border: 1px solid var(--border);
+    margin-top: 3rem;
   }
 
   .practice-card {
     background: var(--deep);
     padding: 2.2rem 1.8rem;
+    text-align: center;
     position: relative;
     overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.16,1,0.3,1);
     cursor: default;
-    transition: background 0.4s;
   }
 
   .practice-card::after {
@@ -463,182 +547,382 @@ SBP Associates official website providing legal consultation ,documentation,and 
     transition: transform 0.4s cubic-bezier(0.16,1,0.3,1);
   }
 
-  .practice-card:hover { background: rgba(184,151,42,0.04); }
-  .practice-card:hover::after { transform: scaleX(1); }
+  .practice-card:hover {
+    background: rgba(184,151,42,0.06);
+  }
+
+  .practice-card:hover::after {
+    transform: scaleX(1);
+  }
 
   .practice-icon {
-    font-size: 1.6rem;
+    font-size: 2rem;
     margin-bottom: 1rem;
     display: block;
   }
 
   .practice-name {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 1.05rem;
+    font-size: 1rem;
     font-weight: 500;
     color: var(--warm-white);
     line-height: 1.3;
+    letter-spacing: 0.02em;
   }
 
-  /* ─── TEAM ─── */
-  #team {
+  /* COURTS */
+  #courts {
     background: var(--charcoal);
   }
 
-  .team-grid {
+  .courts-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-    margin-top: 3.5rem;
+    gap: 3rem;
+    margin-top: 3rem;
   }
 
-  .team-card {
-    border: 1px solid var(--border);
-    padding: 2.8rem 2.2rem;
-    position: relative;
-    transition: all 0.4s cubic-bezier(0.16,1,0.3,1);
-    background: var(--deep);
-  }
-
-  .team-card:hover {
-    border-color: var(--gold);
-    transform: translateY(-6px);
-    box-shadow: 0 30px 60px rgba(0,0,0,0.4), 0 0 0 1px rgba(184,151,42,0.1);
-  }
-
-  /* Primary card highlight */
-  .team-card.primary {
-    border-color: rgba(184,151,42,0.5);
-    background: rgba(184,151,42,0.03);
-  }
-
-  .team-card.primary .team-avatar {
-    background: rgba(184,151,42,0.08);
-  }
-
-  .primary-badge {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    font-size: 0.58rem;
-    letter-spacing: 0.2em;
+  .court-group h4 {
+    font-size: 0.7rem;
+    letter-spacing: 0.15em;
     text-transform: uppercase;
-    color: var(--deep);
-    background: var(--gold);
-    padding: 0.25rem 0.65rem;
+    color: var(--gold);
+    margin-bottom: 1.5rem;
     font-weight: 600;
   }
 
-  .team-avatar {
-    width: 60px;
-    height: 60px;
-    border: 1px solid var(--gold);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.5rem;
-    font-weight: 300;
-    color: var(--gold-light);
-    margin-bottom: 1.5rem;
+  .court-group ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
   }
 
-  .team-name {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.5rem;
-    font-weight: 500;
-    margin-bottom: 0.3rem;
+  .court-group li {
+    padding: 0.8rem 0;
+    border-top: 1px solid var(--border);
+    font-size: 0.9rem;
+    color: rgba(250,248,244,0.7);
   }
 
-  .team-role {
-    font-size: 0.68rem;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    color: var(--gold);
-    margin-bottom: 1.2rem;
-  }
-
-  .team-phone {
-    font-size: 0.85rem;
-    color: rgba(250,248,244,0.55);
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    transition: color 0.2s;
-  }
-
-  .team-phone:hover { color: var(--gold-light); }
-
-  .team-phone::before { content: '↗'; font-size: 0.7rem; }
-
-  /* ─── CONTACT ─── */
+  /* CONTACT */
   #contact {
     background: var(--deep);
-    display: grid;
-    grid-template-columns: 1fr 1.2fr;
-    gap: 5rem;
-    align-items: start;
   }
 
-  .contact-left .section-title { margin-bottom: 2rem; }
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 4rem;
+    margin-top: 3rem;
+  }
 
-  .contact-info-item {
-    margin-bottom: 2rem;
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2.2rem;
+  }
+
+  .contact-item {
     padding-bottom: 2rem;
     border-bottom: 1px solid var(--border);
   }
 
-  .contact-info-item:last-child { border-bottom: none; }
+  .contact-item:last-child {
+    border-bottom: none;
+  }
 
-  .contact-info-label {
-    font-size: 0.62rem;
-    letter-spacing: 0.3em;
+  .contact-label {
+    font-size: 0.65rem;
+    letter-spacing: 0.25em;
     text-transform: uppercase;
     color: var(--gold);
     margin-bottom: 0.6rem;
   }
 
-  .contact-info-value {
-    font-size: 0.9rem;
-    color: rgba(250,248,244,0.75);
-    line-height: 1.7;
+  .contact-value {
+    font-size: 0.95rem;
+    color: rgba(250,248,244,0.8);
+    line-height: 1.8;
   }
 
-  .contact-info-value a {
-    color: rgba(250,248,244,0.75);
+  .contact-value a {
+    color: rgba(250,248,244,0.8);
     text-decoration: none;
     display: block;
     transition: color 0.2s;
   }
 
-  .contact-info-value a:hover { color: var(--gold-light); }
+  .contact-value a:hover {
+    color: var(--gold-light);
+  }
 
-  /* Primary phone highlight */
-  .contact-info-value a.primary-phone {
+  .contact-value a.primary {
     color: var(--gold-light);
     font-weight: 500;
   }
 
-  .contact-info-value a.primary-phone::after {
-    content: ' ★';
-    font-size: 0.75rem;
-    color: var(--gold);
+  .social-links {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 0.8rem;
   }
 
-  /* Contact form */
+  .social-btn {
+    font-size: 0.8rem;
+    padding: 0.6rem 1.2rem;
+    border: 1px solid var(--border);
+    color: rgba(250,248,244,0.7);
+    text-decoration: none;
+    transition: all 0.3s;
+    display: inline-block;
+  }
+
+  .social-btn:hover {
+    border-color: var(--gold);
+    color: var(--gold-light);
+    background: rgba(184,151,42,0.05);
+  }
+
+  .social-icon-link {
+    width: 50px;
+    height: 50px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--border);
+    border-radius: 50%;
+    color: rgba(184,151,42,0.6);
+    text-decoration: none;
+    transition: all 0.3s;
+  }
+
+  .social-icon-link:hover {
+    border-color: var(--gold);
+    color: var(--gold-light);
+    background: rgba(184,151,42,0.08);
+    box-shadow: 0 4px 12px rgba(184,151,42,0.2);
+  }
+
+  .social-icon-link svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .cred-details {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .cred-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  .cred-badge {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    color: var(--gold-light);
+    text-transform: uppercase;
+  }
+
+  .cred-text {
+    font-size: 0.8rem;
+    color: rgba(250,248,244,0.6);
+    font-weight: 300;
+  }
+
+  /* PROCESS SECTION */
+  #process {
+    background: var(--charcoal);
+  }
+
+  .process-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+
+  .process-step {
+    background: var(--deep);
+    border: 1px solid var(--border);
+    padding: 2rem;
+    text-align: center;
+    position: relative;
+    transition: all 0.3s;
+  }
+
+  .process-step:hover {
+    border-color: var(--gold);
+    background: rgba(184,151,42,0.05);
+    transform: translateY(-4px);
+  }
+
+  .process-step::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--gold);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s cubic-bezier(0.16,1,0.3,1);
+  }
+
+  .process-step:hover::before {
+    transform: scaleX(1);
+  }
+
+  .step-number {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: var(--gold-light);
+    margin-bottom: 1rem;
+    line-height: 1;
+  }
+
+  .process-step h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 0.8rem;
+    color: var(--warm-white);
+  }
+
+  .process-step p {
+    font-size: 0.85rem;
+    color: rgba(250,248,244,0.65);
+    line-height: 1.6;
+  }
+
+  /* FAQ SECTION */
+  #faq {
+    background: var(--deep);
+  }
+
+  .faq-container {
+    max-width: 800px;
+    margin: 3rem auto 0;
+  }
+
+  .faq-item {
+    border-top: 1px solid var(--border);
+    padding: 1.5rem 0;
+  }
+
+  .faq-item:last-child {
+    border-bottom: 1px solid var(--border);
+  }
+
+  .faq-question {
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 0.8rem 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Jost', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--warm-white);
+    transition: all 0.3s;
+    text-align: left;
+  }
+
+  .faq-question:hover {
+    color: var(--gold-light);
+  }
+
+  .faq-question span:first-child {
+    flex: 1;
+  }
+
+  .faq-icon {
+    font-size: 1.5rem;
+    color: var(--gold);
+    transition: transform 0.3s;
+    margin-left: 1rem;
+    flex-shrink: 0;
+  }
+
+  .faq-question.active .faq-icon {
+    transform: rotate(45deg);
+  }
+
+  .faq-answer {
+    display: none;
+    padding: 1.5rem 0;
+    font-size: 0.88rem;
+    line-height: 1.8;
+    color: rgba(250,248,244,0.65);
+    animation: slideDown 0.3s ease-out;
+  }
+
+  .faq-answer.active {
+    display: block;
+  }
+
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .faq-answer p {
+    margin-bottom: 1rem;
+  }
+
+  .faq-answer ul {
+    margin: 1rem 0 1rem 1.5rem;
+    padding: 0;
+    list-style: none;
+  }
+
+  .faq-answer li {
+    padding: 0.4rem 0 0.4rem 1.5rem;
+    position: relative;
+    color: rgba(250,248,244,0.7);
+  }
+
+  .faq-answer li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--gold);
+    font-weight: bold;
+  }
+
+  .faq-answer strong {
+    color: var(--gold-light);
+  }
+
+  /* FORM */
   .contact-form {
     background: var(--charcoal);
     border: 1px solid var(--border);
-    padding: 3rem;
+    padding: 2.8rem;
   }
 
   .contact-form h3 {
     font-family: 'Cormorant Garamond', serif;
     font-size: 1.6rem;
     font-weight: 400;
-    margin-bottom: 0.4rem;
+    margin-bottom: 0.5rem;
   }
 
   .contact-form p {
@@ -657,7 +941,7 @@ SBP Associates official website providing legal consultation ,documentation,and 
     letter-spacing: 0.2em;
     text-transform: uppercase;
     color: rgba(250,248,244,0.5);
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.6rem;
   }
 
   .form-group input,
@@ -672,7 +956,6 @@ SBP Associates official website providing legal consultation ,documentation,and 
     padding: 0.85rem 1rem;
     outline: none;
     transition: border-color 0.3s;
-    -webkit-appearance: none;
   }
 
   .form-group input:focus,
@@ -681,9 +964,10 @@ SBP Associates official website providing legal consultation ,documentation,and 
     border-color: var(--gold);
   }
 
-  .form-group textarea { min-height: 100px; resize: vertical; }
-
-  .form-group select option { background: var(--mid); }
+  .form-group textarea {
+    min-height: 100px;
+    resize: vertical;
+  }
 
   .form-submit {
     width: 100%;
@@ -694,7 +978,7 @@ SBP Associates official website providing legal consultation ,documentation,and 
     font-family: 'Jost', sans-serif;
     font-size: 0.75rem;
     font-weight: 600;
-    letter-spacing: 0.2em;
+    letter-spacing: 0.15em;
     text-transform: uppercase;
     cursor: pointer;
     transition: all 0.3s;
@@ -703,7 +987,7 @@ SBP Associates official website providing legal consultation ,documentation,and 
 
   .form-submit:hover {
     background: var(--gold-light);
-    box-shadow: 0 8px 30px rgba(184,151,42,0.35);
+    box-shadow: 0 10px 30px rgba(184,151,42,0.35);
   }
 
   .form-note {
@@ -713,73 +997,86 @@ SBP Associates official website providing legal consultation ,documentation,and 
     margin-top: 1rem;
   }
 
-  /* ─── SUCCESS MESSAGE ─── */
   .form-success {
     display: none;
     text-align: center;
     padding: 2rem;
   }
 
-  .form-success .check { font-size: 2.5rem; margin-bottom: 1rem; }
+  .form-success .check {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
   .form-success h4 {
     font-family: 'Cormorant Garamond', serif;
     font-size: 1.4rem;
     color: var(--gold-light);
     margin-bottom: 0.5rem;
   }
-  .form-success p { font-size: 0.82rem; color: rgba(250,248,244,0.5); }
 
-  /* ─── FOOTER ─── */
+  .form-success p {
+    font-size: 0.82rem;
+    color: rgba(250,248,244,0.5);
+  }
+
+  /* FOOTER */
   footer {
     background: #080808;
     border-top: 1px solid var(--border);
-    padding: 3rem 4rem;
+    padding: 3rem;
+    color: rgba(250,248,244,0.4);
+    font-size: 0.8rem;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
-    gap: 1rem;
-  }
-
-  .footer-logo {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.2rem;
-    font-weight: 500;
-    color: var(--gold-light);
-  }
-
-  .footer-copy {
-    font-size: 0.72rem;
-    color: rgba(250,248,244,0.3);
-    letter-spacing: 0.08em;
-  }
-
-  .footer-links {
-    display: flex;
+    justify-content: space-between;
     gap: 2rem;
-    list-style: none;
+    flex-wrap: wrap;
   }
 
-  .footer-links a {
-    font-size: 0.7rem;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    color: rgba(250,248,244,0.35);
+  footer .brand {
+    color: var(--gold-light);
+    margin-bottom: 0.5rem;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.1rem;
+  }
+
+  footer p {
+    margin: 0.3rem 0;
+    font-size: 0.8rem;
+  }
+
+  .footer-social {
+    display: flex;
+    gap: 1.2rem;
+    align-items: center;
+  }
+
+  .footer-social a {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--border);
+    border-radius: 50%;
+    color: rgba(250,248,244,0.5);
     text-decoration: none;
-    transition: color 0.2s;
+    transition: all 0.3s;
   }
 
-  .footer-links a:hover { color: var(--gold); }
-
-  /* ─── DIVIDER ─── */
-  .gold-divider {
-    width: 80px;
-    height: 1px;
-    background: linear-gradient(90deg, transparent, var(--gold), transparent);
-    margin: 0 auto 3rem;
+  .footer-social a:hover {
+    border-color: var(--gold);
+    color: var(--gold-light);
+    background: rgba(184,151,42,0.05);
   }
 
-  /* ─── WHATSAPP FLOAT ─── */
+  .footer-social svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  /* WHATSAPP FLOAT */
   .wa-float {
     position: fixed;
     bottom: 2rem;
@@ -809,195 +1106,347 @@ SBP Associates official website providing legal consultation ,documentation,and 
     50% { box-shadow: 0 4px 30px rgba(37,211,102,0.7); }
   }
 
-  /* ─── FADE UP ANIMATION ─── */
-  .fade-up {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 0.7s ease, transform 0.7s ease;
+  /* DISCLAIMER */
+  #disclaimer {
+    position: fixed;
+    inset: 0;
+    z-index: 300;
+    background: var(--deep);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
   }
 
-  .fade-up.visible {
-    opacity: 1;
-    transform: translateY(0);
+  #disclaimer.hidden {
+    display: none;
   }
 
-  @keyframes fadeUp {
-    to { opacity: 1; transform: none; }
+  .disclaimer-box {
+    max-width: 520px;
+    border: 1px solid var(--border);
+    background: var(--charcoal);
+    padding: 3rem;
+    text-align: left;
   }
 
-  /* ─── RESPONSIVE ─── */
+  .disclaimer-box h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--warm-white);
+  }
+
+  .disclaimer-box p {
+    font-size: 0.9rem;
+    line-height: 1.8;
+    color: rgba(250,248,244,0.65);
+    margin-bottom: 1.2rem;
+  }
+
+  .disclaimer-box .btn {
+    width: 100%;
+    justify-content: center;
+    margin-top: 1.5rem;
+  }
+
+  /* OVERLAY */
+  .overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 250;
+  }
+
+  .overlay.visible {
+    display: block;
+  }
+
+  /* RESPONSIVE */
   @media (max-width: 900px) {
-    nav { padding: 1.2rem 1.5rem; }
-    .nav-links { display: none; }
-    .hero { padding: 7rem 1.5rem 4rem; }
-    .scales-deco { display: none; }
-    .stats-strip { grid-template-columns: repeat(2, 1fr); padding: 2rem 1.5rem; }
-    section { padding: 5rem 1.5rem; }
-    #about { grid-template-columns: 1fr; gap: 3rem; }
-    .practice-grid { grid-template-columns: repeat(2, 1fr); }
-    .team-grid { grid-template-columns: 1fr; }
-    #contact { grid-template-columns: 1fr; gap: 3rem; }
-    footer { flex-direction: column; text-align: center; padding: 2rem 1.5rem; }
-    .footer-links { justify-content: center; }
+    nav {
+      padding: 1rem 1.5rem;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .nav-links {
+      display: none;
+      margin-left: 0;
+    }
+
+    .nav-social {
+      gap: 0.8rem;
+    }
+
+    .hero-grid {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+
+    .portrait-frame {
+      order: -1;
+      max-width: 200px;
+    }
+
+    section {
+      padding: 4rem 1.5rem;
+    }
+
+    .hero {
+      padding: 5rem 1.5rem 3rem;
+    }
+
+    .stats-strip {
+      grid-template-columns: repeat(2, 1fr);
+      padding: 1.8rem 1.5rem;
+    }
+
+    .about-grid,
+    .contact-grid {
+      grid-template-columns: 1fr;
+      gap: 2.5rem;
+    }
+
+    .practice-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .courts-grid {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+
+    .process-grid {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+
+    .faq-question {
+      font-size: 0.85rem;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+    }
+
+    .section-title {
+      font-size: 2rem;
+    }
+  }
+
+  @media (max-width: 600px) {
+    nav {
+      padding: 0.8rem 1rem;
+    }
+
+    .nav-brand-text {
+      font-size: 0.9rem;
+    }
+
+    .nav-brand-text .sub {
+      font-size: 0.55rem;
+    }
+
+    .nav-cta {
+      padding: 0.5rem 1rem;
+      font-size: 0.65rem;
+    }
+
+    .hero {
+      padding: 4rem 1rem 2rem;
+    }
+
+    .stats-strip {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+
+    .practice-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .hero-actions {
+      flex-direction: column;
+    }
+
+    .btn {
+      width: 100%;
+      text-align: center;
+    }
+
+    .disclaimer-box {
+      padding: 2rem;
+    }
   }
 </style>
 </head>
 <body>
 
+<!-- DISCLAIMER GATE -->
+<div id="disclaimer">
+  <div class="disclaimer-box">
+    <h2>Important Notice</h2>
+    <p>This website is provided for informational purposes only and does not constitute an offer or solicitation for legal services. No lawyer-client relationship is formed by visiting this website or submitting information through this website.</p>
+    <p>The materials on this website are not guaranteed to be complete, accurate, or up to date.</p>
+    <p>By accessing this website, you acknowledge and agree to these terms.</p>
+    <button class="btn btn-primary" id="agreeBtn">I Agree & Enter</button>
+  </div>
+</div>
+
+<div class="overlay" id="overlay"></div>
+
 <!-- NAVBAR -->
 <nav>
-  <a href="#" class="nav-logo">
-    <svg viewBox="0 0 220 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <defs>
-        <linearGradient id="goldGrad" x1="0" y1="0" x2="1" y2="1">
-          <stop offset="0%" stop-color="#d4af37"/>
-          <stop offset="50%" stop-color="#f0e6c0"/>
-          <stop offset="100%" stop-color="#b8972a"/>
-        </linearGradient>
-        <linearGradient id="goldGrad2" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0%" stop-color="#d4af37"/>
-          <stop offset="100%" stop-color="#9a7c1e"/>
-        </linearGradient>
-      </defs>
-      <!-- Emblem shield -->
-      <path d="M24 4 L40 10 L40 28 Q40 38 24 44 Q8 38 8 28 L8 10 Z" fill="none" stroke="url(#goldGrad)" stroke-width="1.2"/>
-      <!-- Inner shield line -->
-      <path d="M24 8 L36 13 L36 27 Q36 35 24 40 Q12 35 12 27 L12 13 Z" fill="none" stroke="url(#goldGrad)" stroke-width="0.5" opacity="0.5"/>
-      <!-- Scales beam -->
-      <line x1="17" y1="19" x2="31" y2="19" stroke="url(#goldGrad)" stroke-width="1"/>
-      <line x1="24" y1="15" x2="24" y2="19" stroke="url(#goldGrad)" stroke-width="1"/>
-      <!-- Left pan -->
-      <path d="M17 19 Q14 22 17 25 Q20 28 17 25" fill="none" stroke="url(#goldGrad)" stroke-width="0.9"/>
-      <path d="M13.5 25 Q17 27.5 20.5 25" fill="none" stroke="url(#goldGrad)" stroke-width="0.9"/>
-      <!-- Right pan -->
-      <path d="M31 19 Q28 22 31 25 Q34 28 31 25" fill="none" stroke="url(#goldGrad)" stroke-width="0.9"/>
-      <path d="M27.5 25 Q31 27.5 34.5 25" fill="none" stroke="url(#goldGrad)" stroke-width="0.9"/>
-      <!-- SBP initials -->
-      <!-- S -->
-      <text x="20" y="21" font-family="'Cormorant Garamond', serif" font-size="0" fill="url(#goldGrad)">S</text>
-      <!-- Divider line -->
-      <line x1="47" y1="8" x2="47" y2="40" stroke="url(#goldGrad)" stroke-width="0.6" opacity="0.4"/>
-      <!-- Firm name text block -->
-      <text x="56" y="22" font-family="'Cormorant Garamond', serif" font-size="16" font-weight="600" fill="url(#goldGrad)" letter-spacing="1">SBP &amp; Associates</text>
-      <!-- Tagline -->
-      <text x="57" y="34" font-family="'Jost', sans-serif" font-size="6.5" font-weight="300" fill="#faf8f4" letter-spacing="2.5" opacity="0.55">ADVOCATES &amp; LEGAL CONSULTANTS</text>
-      <!-- Decorative bottom rule under firm name -->
-      <line x1="56" y1="37" x2="210" y2="37" stroke="url(#goldGrad)" stroke-width="0.4" opacity="0.35"/>
-    </svg>
+  <a href="#home" class="nav-brand">
+    <div class="nav-brand-icon">⚖</div>
+    <div class="nav-brand-text">
+      Baburam Kumar
+      <span class="sub">Advocate</span>
+    </div>
   </a>
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
-    <li><a href="#practice">Practice Areas</a></li>
-    <li><a href="#team">Our Team</a></li>
+    <li><a href="#practice">Practice</a></li>
+    <li><a href="#process">Process</a></li>
+    <li><a href="#faq">FAQ</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
-  <!-- PRIMARY: Baburam Kumar +91 75410 10256 -->
-  <a href="tel:+917541010256" class="nav-cta">Consult Now</a>
+  <div class="nav-right">
+    <div class="nav-social">
+      <a href="https://www.instagram.com/adv_raam_709?igsi=enA2ZzMwa3l4enph" target="_blank" rel="noopener" title="Instagram">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="3.6"/><circle cx="17.2" cy="6.8" r="1"/></svg>
+      </a>
+      <a href="https://www.linkedin.com/in/baburam-kumar-1b275435b" target="_blank" rel="noopener" title="LinkedIn">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5A2.5 2.5 0 1 1 2.5 6 2.5 2.5 0 0 1 4.98 3.5zM3 8.98h4V21H3zM9.5 8.98h3.83v1.64h.05c.53-1 1.85-2.06 3.8-2.06 4.06 0 4.82 2.67 4.82 6.14V21h-4v-5.4c0-1.29-.02-2.94-1.79-2.94-1.8 0-2.07 1.4-2.07 2.85V21h-4z"/></svg>
+      </a>
+      <a href="https://youtube.com/@thelawgician1?si=CnPeaKNatLqYYT1I" target="_blank" rel="noopener" title="YouTube">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M22.5 6.5s-.22-1.56-.9-2.25c-.86-.9-1.83-.9-2.27-.96C16.1 3 12 3 12 3h-.01s-4.1 0-7.33.29c-.44.06-1.4.06-2.27.96-.68.7-.9 2.25-.9 2.25S1.2 8.33 1.2 10.17v1.65C1.2 13.66 1.5 15.5 1.5 15.5s.22 1.56.9 2.25c.86.9 1.99.87 2.5.97C6.7 19 12 19 12 19s4.1 0 7.33-.3c.44-.05 1.4-.05 2.27-.96.68-.69.9-2.25.9-2.25s.3-1.83.3-3.67v-1.65c0-1.84-.3-3.67-.3-3.67zM9.75 14.02V8.98L15 11.5z"/></svg>
+      </a>
+    </div>
+    <a href="tel:+917541010256" class="nav-cta">Consult Now</a>
+  </div>
 </nav>
 
 <!-- HERO -->
 <section class="hero" id="home">
   <div class="hero-bg"></div>
-  <div class="hero-lines"></div>
-  <div class="scales-deco">⚖</div>
-
-  <div class="hero-content">
-    <div class="hero-label">Est. — Delhi NCR</div>
-    <!-- Hero emblem -->
-    <div style="margin-bottom:1.5rem;">
-      <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:72px;height:72px;">
-        <defs>
-          <linearGradient id="hg" x1="0" y1="0" x2="1" y2="1">
-            <stop offset="0%" stop-color="#d4af37"/>
-            <stop offset="50%" stop-color="#f0e6c0"/>
-            <stop offset="100%" stop-color="#b8972a"/>
-          </linearGradient>
-        </defs>
-        <!-- Outer ring -->
-        <circle cx="40" cy="40" r="36" fill="none" stroke="url(#hg)" stroke-width="0.8" opacity="0.5"/>
-        <circle cx="40" cy="40" r="32" fill="none" stroke="url(#hg)" stroke-width="0.4" opacity="0.3"/>
-        <!-- Shield -->
-        <path d="M40 12 L58 20 L58 44 Q58 60 40 68 Q22 60 22 44 L22 20 Z" fill="rgba(184,151,42,0.06)" stroke="url(#hg)" stroke-width="1.4"/>
-        <path d="M40 17 L54 24 L54 43 Q54 56 40 63 Q26 56 26 43 L26 24 Z" fill="none" stroke="url(#hg)" stroke-width="0.5" opacity="0.4"/>
-        <!-- Balance scale beam -->
-        <line x1="30" y1="36" x2="50" y2="36" stroke="url(#hg)" stroke-width="1.2"/>
-        <line x1="40" y1="28" x2="40" y2="36" stroke="url(#hg)" stroke-width="1.2"/>
-        <circle cx="40" cy="27" r="1.5" fill="url(#hg)"/>
-        <!-- Left pan -->
-        <line x1="30" y1="36" x2="26" y2="44" stroke="url(#hg)" stroke-width="0.8"/>
-        <path d="M22 44 Q26 48 30 44" fill="none" stroke="url(#hg)" stroke-width="1"/>
-        <!-- Right pan -->
-        <line x1="50" y1="36" x2="54" y2="44" stroke="url(#hg)" stroke-width="0.8"/>
-        <path d="M50 44 Q54 48 58 44" fill="none" stroke="url(#hg)" stroke-width="1"/>
-        <!-- SBP monogram -->
-        <text x="40" y="57" font-family="'Cormorant Garamond', serif" font-size="9" font-weight="600" fill="url(#hg)" text-anchor="middle" letter-spacing="2">SBP</text>
-        <!-- Corner stars -->
-        <text x="40" y="23" font-size="4" fill="#d4af37" text-anchor="middle" opacity="0.6">✦</text>
-      </svg>
+  <div class="hero-grid">
+    <div class="hero-content">
+      <div class="hero-label">Delhi High Court & Tis Hazari Courts</div>
+      <h1>
+        Expert Legal<br><em>Representation</em>
+      </h1>
+      <p class="hero-subtitle">Advocate & Legal Counsel</p>
+      <p class="hero-desc">
+        Practicing before the Delhi High Court, Tis Hazari Courts, and Debts Recovery Tribunal-I. Providing strategic legal representation across civil, criminal, property, and arbitration matters with precision, integrity, and unwavering commitment to your success.
+      </p>
+      <div class="hero-creds">
+        <span><span class="cred-dot"></span> AIBE Qualified</span>
+        <span><span class="cred-dot"></span> Delhi HC Bar Member</span>
+        <span><span class="cred-dot"></span> Tis Hazari Bar Member</span>
+      </div>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary">Book Consultation</a>
+        <a href="#practice" class="btn btn-ghost">View Practice Areas</a>
+      </div>
     </div>
-    <h1>SBP &<br><em>Associates</em></h1>
-    <p class="hero-sub">Advocate & Legal Consultants</p>
-    <p class="hero-desc">
-      Practising before the Delhi High Court, Tis Hazari Courts, and Debts Recovery Tribunal-I,
-      we deliver incisive legal counsel with the precision and integrity our clients deserve.
-    </p>
-    <div class="hero-actions">
-      <a href="#contact" class="btn-primary">Book Consultation</a>
-      <a href="#practice" class="btn-ghost">Practice Areas</a>
+    <div class="hero-portrait">
+      <div>
+        <div class="portrait-frame">⚖️</div>
+        <div class="portrait-caption">Justice · Ethics · Integrity</div>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- STATS STRIP -->
+<!-- STATS -->
 <div class="stats-strip">
-  <div class="stat-item" style="animation-delay:0.1s">
-    <div class="stat-number">3</div>
-    <div class="stat-label">Advocates</div>
-  </div>
-  <div class="stat-item" style="animation-delay:0.2s">
+  <div class="stat-item">
     <div class="stat-number">10+</div>
     <div class="stat-label">Practice Areas</div>
   </div>
-  <div class="stat-item" style="animation-delay:0.3s">
-    <div class="stat-number">2</div>
-    <div class="stat-label">Office Locations</div>
+  <div class="stat-item">
+    <div class="stat-number">3</div>
+    <div class="stat-label">Courts & Forums</div>
   </div>
-  <div class="stat-item" style="animation-delay:0.4s">
-    <div class="stat-number">HC</div>
-    <div class="stat-label">Delhi High Court</div>
+  <div class="stat-item">
+    <div class="stat-number">500+</div>
+    <div class="stat-label">Cases Handled</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-number">24/7</div>
+    <div class="stat-label">Legal Support</div>
   </div>
 </div>
 
 <!-- ABOUT -->
-<section id="about" class="fade-up">
-  <div class="about-left">
-    <div class="section-tag">About the Firm</div>
-    <h2 class="section-title">Justice is not a<br><em>luxury</em> — it is a right.</h2>
-    <p>
-      SBP & Associates is a full-service law firm committed to providing strategic, effective, and
-      ethical legal representation. Our practice spans civil and criminal litigation, property disputes,
-      commercial matters, and specialized tribunal proceedings.
-    </p>
-    <p>
-      With a presence at Tis Hazari Courts, the Delhi High Court, and the Debts Recovery Tribunal,
-      our team brings deep procedural knowledge and courtroom experience to every mandate.
-    </p>
-    <p>
-      We approach each case with thoroughness and a client-first philosophy — ensuring that every
-      individual we represent receives the full weight of our expertise and attention.
-    </p>
-  </div>
-
-  <div class="about-right">
-    <div class="about-card">
-      <div class="about-card-quote">
-        "We don't just argue cases — we build arguments that courts cannot ignore."
+<section id="about">
+  <div class="section-tag">Professional Profile</div>
+  <h2 class="section-title">About <em>Baburam Kumar</em></h2>
+  
+  <div class="about-grid">
+    <div class="about-left">
+      <p>
+        Baburam Kumar is an AIBE-qualified advocate enrolled with the Bar Council of Delhi (Enrolment No. D/19709/2025). He practices before the Delhi High Court, Tis Hazari Courts, District Courts of Delhi, and Debts Recovery Tribunal-I, with a growing practice extending to the Patna High Court and Bihar district courts.
+      </p>
+      <p>
+        With a client-first philosophy and meticulous attention to legal detail, he handles a wide spectrum of matters spanning civil litigation, criminal defense, property disputes, arbitration, family law, and commercial transactions. Every case receives strategic analysis, precise preparation, and aggressive courtroom advocacy.
+      </p>
+      <p>
+        Whether you face a bail hearing, a complex property dispute, a commercial arbitration, or a critical writ petition, Baburam Kumar brings both legal acumen and unwavering dedication to protecting your rights and achieving the best possible outcome.
+      </p>
+    </div>
+    <div class="about-right">
+      <div class="info-card">
+        <div class="info-label">Bar Council</div>
+        <div class="info-value">AIBE Qualified</div>
+        <div class="info-text">Enrollment: D/19709/2025</div>
       </div>
-      <div class="about-courts">
-        <span class="court-badge">Delhi High Court</span>
-        <span class="court-badge">Tis Hazari Courts</span>
-        <span class="court-badge">DRT-I Delhi</span>
-        <span class="court-badge">District Courts</span>
+      <div class="info-card">
+        <div class="quote-block">
+          <p>"Justice is not a luxury—it is a right. Every client deserves representation that puts their interests first."</p>
+        </div>
+      </div>
+      <div class="info-card">
+        <div class="info-label">Approach</div>
+        <div class="info-text">
+          Strategic thinking, thorough preparation, precise execution, and transparent communication at every stage. Your case is handled with the full weight of professional expertise and personal commitment.
+        </div>
+      </div>
+
+      <div class="info-card" style="text-align: center;">
+        <div class="info-label" style="text-align: center;">Professional Credentials</div>
+        <div class="cred-details">
+          <div class="cred-item">
+            <span class="cred-badge">✓ Bar Council Delhi</span>
+            <span class="cred-text">Enrolment: D/19709/2025</span>
+          </div>
+          <div class="cred-item">
+            <span class="cred-badge">✓ AIBE Qualified</span>
+            <span class="cred-text">All India Bar Examination Passed</span>
+          </div>
+          <div class="cred-item">
+            <span class="cred-badge">✓ Supreme Court Ready</span>
+            <span class="cred-text">Delhi HC & District Courts Certified</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="info-card" style="text-align: center;">
+        <div class="info-label" style="text-align: center;">Follow & Connect</div>
+        <div style="display: flex; gap: 1.2rem; justify-content: center; margin-top: 1rem; flex-wrap: wrap;">
+          <a href="https://www.instagram.com/adv_raam_709?igsi=enA2ZzMwa3l4enph" target="_blank" rel="noopener" class="social-icon-link" title="Instagram">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="3.6"/><circle cx="17.2" cy="6.8" r="1"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/baburam-kumar-1b275435b" target="_blank" rel="noopener" class="social-icon-link" title="LinkedIn">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5A2.5 2.5 0 1 1 2.5 6 2.5 2.5 0 0 1 4.98 3.5zM3 8.98h4V21H3zM9.5 8.98h3.83v1.64h.05c.53-1 1.85-2.06 3.8-2.06 4.06 0 4.82 2.67 4.82 6.14V21h-4v-5.4c0-1.29-.02-2.94-1.79-2.94-1.8 0-2.07 1.4-2.07 2.85V21h-4z"/></svg>
+          </a>
+          <a href="https://youtube.com/@thelawgician1?si=CnPeaKNatLqYYT1I" target="_blank" rel="noopener" class="social-icon-link" title="YouTube">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M22.5 6.5s-.22-1.56-.9-2.25c-.86-.9-1.83-.9-2.27-.96C16.1 3 12 3 12 3h-.01s-4.1 0-7.33.29c-.44.06-1.4.06-2.27.96-.68.7-.9 2.25-.9 2.25S1.2 8.33 1.2 10.17v1.65C1.2 13.66 1.5 15.5 1.5 15.5s.22 1.56.9 2.25c.86.9 1.99.87 2.5.97C6.7 19 12 19 12 19s4.1 0 7.33-.3c.44-.05 1.4-.05 2.27-.96.68-.69.9-2.25.9-2.25s.3-1.83.3-3.67v-1.65c0-1.84-.3-3.67-.3-3.67zM9.75 14.02V8.98L15 11.5z"/></svg>
+          </a>
+        </div>
       </div>
     </div>
   </div>
@@ -1005,32 +1454,38 @@ SBP Associates official website providing legal consultation ,documentation,and 
 
 <!-- PRACTICE AREAS -->
 <section id="practice">
-  <div class="practice-header fade-up">
-    <div class="section-tag">Expertise</div>
-    <h2 class="section-title">Our <em>Practice</em> Areas</h2>
-    <p>Comprehensive legal representation across all major domains of civil and criminal law.</p>
-  </div>
-
-  <div class="practice-grid fade-up">
+  <div class="section-tag">Expertise</div>
+  <h2 class="section-title">Areas of <em>Practice</em></h2>
+  <p class="section-desc">Comprehensive legal representation across all major domains of civil and criminal law, specializing in high-impact matters before Delhi's courts.</p>
+  
+  <div class="practice-grid">
     <div class="practice-card">
       <span class="practice-icon">⚖️</span>
       <div class="practice-name">Civil Litigation</div>
     </div>
     <div class="practice-card">
       <span class="practice-icon">🔍</span>
-      <div class="practice-name">Criminal Litigation</div>
+      <div class="practice-name">Criminal Defense</div>
     </div>
     <div class="practice-card">
       <span class="practice-icon">🏛️</span>
       <div class="practice-name">Property Disputes</div>
     </div>
     <div class="practice-card">
+      <span class="practice-icon">📜</span>
+      <div class="practice-name">Writ Petitions</div>
+    </div>
+    <div class="practice-card">
       <span class="practice-icon">🤝</span>
-      <div class="practice-name">Arbitration & Mediation</div>
+      <div class="practice-name">Arbitration</div>
     </div>
     <div class="practice-card">
       <span class="practice-icon">💼</span>
-      <div class="practice-name">Commercial Disputes</div>
+      <div class="practice-name">Commercial Law</div>
+    </div>
+    <div class="practice-card">
+      <span class="practice-icon">👨‍👩‍👧</span>
+      <div class="practice-name">Family Law</div>
     </div>
     <div class="practice-card">
       <span class="practice-icon">🔐</span>
@@ -1038,150 +1493,330 @@ SBP Associates official website providing legal consultation ,documentation,and 
     </div>
     <div class="practice-card">
       <span class="practice-icon">📋</span>
-      <div class="practice-name">FIR Matters</div>
-    </div>
-    <div class="practice-card">
-      <span class="practice-icon">📜</span>
-      <div class="practice-name">Civil Appeals</div>
+      <div class="practice-name">Criminal Appeals</div>
     </div>
     <div class="practice-card">
       <span class="practice-icon">🏦</span>
-      <div class="practice-name">Sec. 138 NI Act Matters</div>
-    </div>
-    <div class="practice-card">
-      <span class="practice-icon">™️</span>
-      <div class="practice-name">IPR & Trademark</div>
+      <div class="practice-name">Sec. 138 NI Act</div>
     </div>
   </div>
 </section>
 
-<!-- TEAM -->
-<section id="team">
-  <div class="fade-up">
-    <div class="section-tag">Our Team</div>
-    <h2 class="section-title">The <em>Advocates</em></h2>
+<!-- COURTS -->
+<section id="courts">
+  <div class="section-tag">Jurisdiction</div>
+  <h2 class="section-title">Courts & <em>Forums</em></h2>
+  <p class="section-desc">Authorized to practice before all major courts and tribunals in Delhi and expand into Bihar and Supreme Court proceedings.</p>
+  
+  <div class="courts-grid">
+    <div class="court-group">
+      <h4>Delhi District Courts</h4>
+      <ul>
+        <li>Tis Hazari Courts</li>
+        <li>Patiala House Court</li>
+        <li>Rouse Avenue Court</li>
+        <li>Saket Court Complex</li>
+        <li>Dwarka Court</li>
+        <li>Rohini Court</li>
+      </ul>
+    </div>
+    <div class="court-group">
+      <h4>High Courts & Supreme Court</h4>
+      <ul>
+        <li>Delhi High Court</li>
+        <li>Supreme Court of India</li>
+        <li>Patna High Court</li>
+      </ul>
+    </div>
+    <div class="court-group">
+      <h4>Tribunals & Forums</h4>
+      <ul>
+        <li>Debts Recovery Tribunal-I, Delhi</li>
+        <li>Consumer Forums</li>
+        <li>Arbitration Proceedings</li>
+        <li>District Courts, Bihar</li>
+      </ul>
+    </div>
   </div>
+</section>
 
-  <div class="team-grid fade-up">
-    <div class="team-card">
-      <div class="team-avatar">SB</div>
-      <div class="team-name">Sweta Baisla</div>
-      <div class="team-role">Advocate</div>
-      <a href="tel:+918178838999" class="team-phone">+91 81788 38999</a>
-      <a href="mailto:swetabansal13091999@gmail.com" class="team-phone" style="margin-top:0.5rem;font-size:0.78rem;word-break:break-all;">swetabansal13091999@gmail.com</a>
+<!-- CONSULTATION PROCESS -->
+<section id="process">
+  <div class="section-tag">How It Works</div>
+  <h2 class="section-title">The <em>Consultation</em> Process</h2>
+  <p class="section-desc">A straightforward, transparent approach to legal consultation and representation.</p>
+  
+  <div class="process-grid">
+    <div class="process-step">
+      <div class="step-number">1</div>
+      <h3>Initial Contact</h3>
+      <p>Call, WhatsApp, or fill the contact form. Brief discussion of your matter.</p>
+    </div>
+    <div class="process-step">
+      <div class="step-number">2</div>
+      <h3>Document Submission</h3>
+      <p>Send relevant documents, FIRs, notices, agreements, or court orders.</p>
+    </div>
+    <div class="process-step">
+      <div class="step-number">3</div>
+      <h3>Case Analysis</h3>
+      <p>Thorough review of your case, legal strategy, and possible outcomes.</p>
+    </div>
+    <div class="process-step">
+      <div class="step-number">4</div>
+      <h3>Fee Discussion</h3>
+      <p>Transparent fee structure discussed. No hidden charges ever.</p>
+    </div>
+    <div class="process-step">
+      <div class="step-number">5</div>
+      <h3>Legal Representation</h3>
+      <p>Begin representation with strategic planning and aggressive advocacy.</p>
+    </div>
+    <div class="process-step">
+      <div class="step-number">6</div>
+      <h3>Regular Updates</h3>
+      <p>Constant communication via WhatsApp, calls, and emails throughout.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ SECTION -->
+<section id="faq">
+  <div class="section-tag">Questions</div>
+  <h2 class="section-title">Frequently Asked <em>Questions</em></h2>
+  <p class="section-desc">Get answers to common questions about our consultation and representation.</p>
+  
+  <div class="faq-container">
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFaq(this)">
+        <span>What documents should I bring for initial consultation?</span>
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        <p><strong>Essential Documents Checklist:</strong></p>
+        <ul>
+          <li>Identity Proof (Aadhar, PAN, Passport)</li>
+          <li>Address Proof (Utility Bills, Rent Agreement)</li>
+          <li>FIR Copy (if criminal matter)</li>
+          <li>Court Orders & Notices</li>
+          <li>Agreements & Contracts</li>
+          <li>Payment Records & Receipts</li>
+          <li>Correspondence (emails, letters)</li>
+          <li>Chronology of events (important dates)</li>
+        </ul>
+        <p><em>You don't need originals initially—photocopies are fine. Bring whatever documents are relevant to your matter.</em></p>
+      </div>
     </div>
 
-    <!-- PRIMARY CONTACT CARD -->
-    <div class="team-card primary">
-      <span class="primary-badge">Primary Contact</span>
-      <div class="team-avatar">BK</div>
-      <div class="team-name">Baburam Kumar</div>
-      <div class="team-role">Advocate</div>
-      <a href="tel:+917541010256" class="team-phone">+91 75410 10256</a>
-      <a href="mailto:ramakumar313h@gmail.com" class="team-phone" style="margin-top:0.5rem;font-size:0.78rem;word-break:break-all;">ramakumar313h@gmail.com</a>
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFaq(this)">
+        <span>What is the fee structure? How does consultation work?</span>
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        <p><strong>Our Fee Approach:</strong></p>
+        <ul>
+          <li><strong>Initial Consultation:</strong> ₹2,000-5,000 (30-45 min detailed discussion of your case)</li>
+          <li><strong>Case Retainer:</strong> Depends on matter complexity (₹10,000 - ₹50,000+)</li>
+          <li><strong>Per Appearance:</strong> ₹3,000-10,000 depending on court and case stage</li>
+          <li><strong>Fixed Retainer Packages:</strong> Available for ongoing matters (best for long cases)</li>
+        </ul>
+        <p><strong>What's Included:</strong> Case analysis, legal strategy, drafting, court appearances, client updates via WhatsApp/email</p>
+        <p><strong>Payment Terms:</strong> 50% advance, 50% on completion or as agreed. Flexible payment plans available.</p>
+        <p><em>No hidden charges. Transparent billing from day one.</em></p>
+      </div>
     </div>
 
-    <div class="team-card">
-      <div class="team-avatar">PP</div>
-      <div class="team-name">Pradeep Patel</div>
-      <div class="team-role">Advocate</div>
-      <a href="tel:+917055118951" class="team-phone">+91 70551 18951</a>
-      <a href="mailto:kumarpradeep22195@gmail.com" class="team-phone" style="margin-top:0.5rem;font-size:0.78rem;word-break:break-all;">kumarpradeep22195@gmail.com</a>
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFaq(this)">
+        <span>Can you help with Bail applications and emergency cases?</span>
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        <p><strong>24/7 Emergency Support Available.</strong></p>
+        <p>If you or a loved one is arrested or detained:</p>
+        <ul>
+          <li>Call immediately: +91 75410 10256</li>
+          <li>WhatsApp details of arrest and police station</li>
+          <li>Emergency bail hearing can be arranged same day</li>
+          <li>Anticipatory bail also available for pre-arrest cases</li>
+        </ul>
+        <p>We specialize in bail matters and can often secure release within 24-48 hours of arrest.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFaq(this)">
+        <span>How long does a case usually take?</span>
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        <p><strong>Case Duration Varies by Matter:</strong></p>
+        <ul>
+          <li><strong>Bail Matters:</strong> 1-3 days</li>
+          <li><strong>Criminal Trials:</strong> 6 months to 2+ years (court dependent)</li>
+          <li><strong>Civil Suits:</strong> 2-5 years (court congestion dependent)</li>
+          <li><strong>Appeals:</strong> 1-3 years</li>
+          <li><strong>Arbitration:</strong> 3-12 months</li>
+        </ul>
+        <p>During initial consultation, we provide a realistic timeline based on your specific matter and current court backlogs.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFaq(this)">
+        <span>Do you handle cases in other states (Bihar, etc.)?</span>
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        <p><strong>Yes, we handle matters across multiple jurisdictions:</strong></p>
+        <ul>
+          <li>Delhi High Court & District Courts</li>
+          <li>Patna High Court (Bihar)</li>
+          <li>District Courts in Bihar</li>
+          <li>Supreme Court of India (select matters)</li>
+          <li>Debts Recovery Tribunal-I, Delhi</li>
+        </ul>
+        <p>For interstate matters, we work with associate advocates and ensure seamless coordination.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFaq(this)">
+        <span>How do you keep clients updated?</span>
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        <p><strong>Multiple Communication Channels:</strong></p>
+        <ul>
+          <li><strong>WhatsApp:</strong> Quick updates, status messages, next hearing dates</li>
+          <li><strong>Phone Calls:</strong> Important developments discussed over call</li>
+          <li><strong>Email:</strong> Detailed written updates, documents, court orders</li>
+          <li><strong>In-person Meetings:</strong> Strategy discussions and case reviews</li>
+        </ul>
+        <p>You'll never be left wondering about your case. Regular updates are built into our service.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFaq(this)">
+        <span>What if I don't have all documents right now?</span>
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        <p><strong>No problem at all.</strong></p>
+        <p>Bring whatever you have. During consultation, we'll identify exactly which additional documents are needed and help you obtain them. Many documents (FIR, court orders, notices) can be obtained from government websites or the court directly.</p>
+        <p>We'll guide you step-by-step on how to get missing documents without delays.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFaq(this)">
+        <span>Is attorney-client communication confidential?</span>
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        <p><strong>Absolutely. Complete Confidentiality.</strong></p>
+        <p>All communication between you and your advocate is protected by attorney-client privilege under law. Nothing you discuss will be shared with anyone without your explicit consent.</p>
+        <p>Your privacy and trust are paramount to our practice.</p>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- CONTACT -->
 <section id="contact">
-  <div class="contact-left fade-up">
-    <div class="section-tag">Get In Touch</div>
-    <h2 class="section-title">Let's Discuss<br>Your <em>Case</em></h2>
+  <div class="section-tag">Get in Touch</div>
+  <h2 class="section-title">Contact & <em>Consultation</em></h2>
+  
+  <div class="contact-grid">
+    <div class="contact-info">
+      <div class="contact-item">
+        <div class="contact-label">Phone (Primary)</div>
+        <div class="contact-value">
+          <a href="tel:+917541010256" class="primary">+91 75410 10256</a>
+        </div>
+      </div>
 
-    <div class="contact-info-item">
-      <div class="contact-info-label">Courts</div>
-      <div class="contact-info-value">
-        Tis Hazari Courts, Delhi<br>
-        Delhi High Court
+      <div class="contact-item">
+        <div class="contact-label">Email</div>
+        <div class="contact-value">
+          <a href="mailto:ramakumar313h@gmail.com">ramakumar313h@gmail.com</a>
+        </div>
+      </div>
+
+      <div class="contact-item">
+        <div class="contact-label">Office Locations</div>
+        <div class="contact-value">
+          <strong>New Delhi Office:</strong> B-288 Nehru Vihar, New Delhi — 110054<br><br>
+          <strong>Chambers:</strong> Tis Hazari Courts, Delhi High Court
+        </div>
+      </div>
+
+      <div class="contact-item">
+        <div class="contact-label">Hours</div>
+        <div class="contact-value">
+          Mon—Fri: 10:00 AM — 6:00 PM<br>
+          Sat: 10:00 AM — 2:00 PM<br>
+          Sun: By Appointment<br><br>
+          24/7 Emergency Support Available
+        </div>
+      </div>
+
+      <div class="contact-item">
+        <div class="contact-label">Follow Us</div>
+        <div class="social-links">
+          <a href="https://www.instagram.com/adv_raam_709?igsi=enA2ZzMwa3l4enph" target="_blank" rel="noopener" class="social-btn">Instagram</a>
+          <a href="https://www.linkedin.com/in/baburam-kumar-1b275435b" target="_blank" rel="noopener" class="social-btn">LinkedIn</a>
+          <a href="https://youtube.com/@thelawgician1?si=CnPeaKNatLqYYT1I" target="_blank" rel="noopener" class="social-btn">YouTube</a>
+        </div>
       </div>
     </div>
 
-    <div class="contact-info-item">
-      <div class="contact-info-label">Office — New Delhi</div>
-      <div class="contact-info-value">
-        B-288 Nehru Vihar,<br>New Delhi — 110054
-      </div>
-    </div>
-
-    <div class="contact-info-item">
-      <div class="contact-info-label">Office — Ghaziabad</div>
-      <div class="contact-info-value">
-        33 Fut Road, Shani Bazar Road,<br>Subhash Park-2, Khoda Colony,<br>Ghaziabad, Uttar Pradesh
-      </div>
-    </div>
-
-    <div class="contact-info-item">
-      <div class="contact-info-label">Phone</div>
-      <div class="contact-info-value">
-        <!-- PRIMARY NUMBER FIRST -->
-        <a href="tel:+917541010256" class="primary-phone">+91 75410 10256 (Baburam Kumar)</a>
-        <a href="tel:+918178838999">+91 81788 38999 (Sweta Baisla)</a>
-        <a href="tel:+917055118951">+91 70551 18951 (Pradeep Patel)</a>
-      </div>
-    </div>
-
-    <div class="contact-info-item">
-      <div class="contact-info-label">Email</div>
-      <div class="contact-info-value">
-        <a href="mailto:ramakumar313h@gmail.com">ramakumar313h@gmail.com (Baburam Kumar)</a>
-        <a href="mailto:swetabansal13091999@gmail.com">swetabansal13091999@gmail.com (Sweta Baisla)</a>
-        <a href="mailto:kumarpradeep22195@gmail.com">kumarpradeep22195@gmail.com (Pradeep Patel)</a>
-      </div>
-    </div>
-  </div>
-
-  <div class="contact-right fade-up">
     <div class="contact-form">
-      <h3>Send an Enquiry</h3>
-      <p>We respond within 24 hours. All communications are strictly confidential.</p>
-
+      <h3>Send Enquiry</h3>
+      <p>We respond within 24 hours. All communications are confidential.</p>
+      
       <div id="contactForm">
         <div class="form-group">
           <label>Full Name</label>
-          <input type="text" id="clientName" placeholder="Your full name">
+          <input type="text" id="name" placeholder="Your full name">
         </div>
         <div class="form-group">
           <label>Phone Number</label>
-          <input type="tel" id="clientPhone" placeholder="+91 XXXXX XXXXX">
+          <input type="tel" id="phone" placeholder="+91 XXXXX XXXXX">
+        </div>
+        <div class="form-group">
+          <label>Email Address</label>
+          <input type="email" id="email" placeholder="your@email.com">
         </div>
         <div class="form-group">
           <label>Nature of Matter</label>
-          <select id="clientMatter">
+          <select id="matter">
             <option value="">— Select Matter Type —</option>
             <option>Civil Litigation</option>
-            <option>Criminal Litigation</option>
+            <option>Criminal Defense</option>
             <option>Property Dispute</option>
-            <option>Bail Matter</option>
-            <option>FIR Matter</option>
-            <option>Civil Appeal</option>
-            <option>Arbitration / Mediation</option>
-            <option>Section 138 NI Act</option>
-            <option>Commercial Dispute</option>
-            <option>IPR / Trademark</option>
+            <option>Writ Petition</option>
+            <option>Arbitration</option>
+            <option>Family Law</option>
+            <option>Bail Application</option>
+            <option>Criminal Appeal</option>
             <option>Other</option>
           </select>
         </div>
         <div class="form-group">
           <label>Brief Description</label>
-          <textarea id="clientDesc" placeholder="Briefly describe your legal matter..."></textarea>
+          <textarea id="description" placeholder="Describe your legal matter..."></textarea>
         </div>
         <button class="form-submit" onclick="submitForm()">Submit Enquiry</button>
-        <p class="form-note">* All information shared is strictly confidential and protected by attorney-client privilege.</p>
+        <p class="form-note">* All information is confidential and protected by attorney-client privilege.</p>
       </div>
 
       <div class="form-success" id="formSuccess">
-        <div class="check">✦</div>
+        <div class="check">✓</div>
         <h4>Enquiry Received</h4>
-        <p>Thank you. Our team will contact you within 24 hours to discuss your matter.</p>
+        <p>Thank you. We will contact you within 24 hours to discuss your matter.</p>
       </div>
     </div>
   </div>
@@ -1189,99 +1824,90 @@ SBP Associates official website providing legal consultation ,documentation,and 
 
 <!-- FOOTER -->
 <footer>
-  <div class="footer-logo">
-    <svg viewBox="0 0 180 38" fill="none" xmlns="http://www.w3.org/2000/svg" style="height:32px;width:auto;">
-      <defs>
-        <linearGradient id="fg" x1="0" y1="0" x2="1" y2="0">
-          <stop offset="0%" stop-color="#d4af37"/>
-          <stop offset="100%" stop-color="#b8972a"/>
-        </linearGradient>
-      </defs>
-      <path d="M19 3 L32 8 L32 22 Q32 30 19 35 Q6 30 6 22 L6 8 Z" fill="none" stroke="url(#fg)" stroke-width="1"/>
-      <line x1="13" y1="15" x2="25" y2="15" stroke="url(#fg)" stroke-width="0.9"/>
-      <line x1="19" y1="11" x2="19" y2="15" stroke="url(#fg)" stroke-width="0.9"/>
-      <path d="M10 21 Q13 23.5 16 21" fill="none" stroke="url(#fg)" stroke-width="0.8"/>
-      <path d="M22 21 Q25 23.5 28 21" fill="none" stroke="url(#fg)" stroke-width="0.8"/>
-      <line x1="38" y1="5" x2="38" y2="33" stroke="url(#fg)" stroke-width="0.5" opacity="0.35"/>
-      <text x="45" y="18" font-family="'Cormorant Garamond', serif" font-size="13" font-weight="600" fill="url(#fg)" letter-spacing="0.5">SBP &amp; Associates</text>
-      <text x="46" y="27" font-family="'Jost', sans-serif" font-size="5.5" font-weight="300" fill="#faf8f4" letter-spacing="2" opacity="0.45">ADVOCATES &amp; LEGAL CONSULTANTS</text>
-    </svg>
+  <div style="flex: 1;">
+    <div class="brand">Advocate Baburam Kumar</div>
+    <p>Delhi High Court · Tis Hazari Courts · Debts Recovery Tribunal-I</p>
   </div>
-  <p class="footer-copy">© 2025 SBP & Associates. Advocate & Legal Consultants, Delhi.</p>
-  <ul class="footer-links">
-    <li><a href="#about">About</a></li>
-    <li><a href="#practice">Practice</a></li>
-    <li><a href="#team">Team</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
+  <div class="footer-social">
+    <a href="https://www.instagram.com/adv_raam_709?igsi=enA2ZzMwa3l4enph" target="_blank" rel="noopener" title="Instagram">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="3.6"/><circle cx="17.2" cy="6.8" r="1"/></svg>
+    </a>
+    <a href="https://www.linkedin.com/in/baburam-kumar-1b275435b" target="_blank" rel="noopener" title="LinkedIn">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5A2.5 2.5 0 1 1 2.5 6 2.5 2.5 0 0 1 4.98 3.5zM3 8.98h4V21H3zM9.5 8.98h3.83v1.64h.05c.53-1 1.85-2.06 3.8-2.06 4.06 0 4.82 2.67 4.82 6.14V21h-4v-5.4c0-1.29-.02-2.94-1.79-2.94-1.8 0-2.07 1.4-2.07 2.85V21h-4z"/></svg>
+    </a>
+    <a href="https://youtube.com/@thelawgician1?si=CnPeaKNatLqYYT1I" target="_blank" rel="noopener" title="YouTube">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M22.5 6.5s-.22-1.56-.9-2.25c-.86-.9-1.83-.9-2.27-.96C16.1 3 12 3 12 3h-.01s-4.1 0-7.33.29c-.44.06-1.4.06-2.27.96-.68.7-.9 2.25-.9 2.25S1.2 8.33 1.2 10.17v1.65C1.2 13.66 1.5 15.5 1.5 15.5s.22 1.56.9 2.25c.86.9 1.99.87 2.5.97C6.7 19 12 19 12 19s4.1 0 7.33-.3c.44-.05 1.4-.05 2.27-.96.68-.69.9-2.25.9-2.25s.3-1.83.3-3.67v-1.65c0-1.84-.3-3.67-.3-3.67zM9.75 14.02V8.98L15 11.5z"/></svg>
+    </a>
+  </div>
+  <div style="flex: 1; text-align: right;">
+    <p>© 2025. Informational website only — not an advertisement or solicitation for legal services.</p>
+  </div>
 </footer>
 
-<!-- WHATSAPP FLOAT — PRIMARY: Baburam Kumar 7541010256 -->
+<!-- WHATSAPP FLOAT -->
 <a href="https://wa.me/917541010256?text=Hello%2C%20I%20need%20legal%20consultation." 
-   class="wa-float" target="_blank" title="WhatsApp Us">💬</a>
+   class="wa-float" target="_blank" title="WhatsApp Now">💬</a>
 
 <script>
-  // Fade-up intersection observer
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(e => {
-      if (e.isIntersecting) {
-        e.target.classList.add('visible');
-      }
-    });
-  }, { threshold: 0.12 });
-
-  document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
-
-  // Stats counter animation
-  const statNumbers = document.querySelectorAll('.stat-number');
-  const statsObserver = new IntersectionObserver((entries) => {
-    entries.forEach(e => {
-      if (e.isIntersecting) {
-        e.target.style.animation = 'fadeUp 0.8s ease-out forwards';
-      }
-    });
-  }, { threshold: 0.5 });
-
-  document.querySelectorAll('.stat-item').forEach(el => statsObserver.observe(el));
+  // Disclaimer gate
+  document.getElementById('agreeBtn').addEventListener('click', function(){
+    document.getElementById('disclaimer').classList.add('hidden');
+    document.getElementById('overlay').classList.remove('visible');
+  });
 
   // Smooth scroll
   document.querySelectorAll('a[href^="#"]').forEach(a => {
     a.addEventListener('click', e => {
       e.preventDefault();
       const target = document.querySelector(a.getAttribute('href'));
-      if (target) target.scrollIntoView({ behavior: 'smooth' });
+      if(target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
     });
   });
 
-  // Form submission — WhatsApp to primary number 7541010256
+  // FAQ Toggle Function
+  function toggleFaq(button) {
+    const answer = button.nextElementSibling;
+    const isActive = answer.classList.contains('active');
+
+    // Close all other FAQs
+    document.querySelectorAll('.faq-answer.active').forEach(item => {
+      if(item !== answer) {
+        item.classList.remove('active');
+        item.previousElementSibling.classList.remove('active');
+      }
+    });
+
+    // Toggle current FAQ
+    if(isActive) {
+      answer.classList.remove('active');
+      button.classList.remove('active');
+    } else {
+      answer.classList.add('active');
+      button.classList.add('active');
+    }
+  }
+
+  // Form submission — WhatsApp
   function submitForm() {
-    const name = document.getElementById('clientName').value.trim();
-    const phone = document.getElementById('clientPhone').value.trim();
-    const matter = document.getElementById('clientMatter').value;
-    const desc = document.getElementById('clientDesc').value.trim();
+    const name = document.getElementById('name').value.trim();
+    const phone = document.getElementById('phone').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const matter = document.getElementById('matter').value;
+    const desc = document.getElementById('description').value.trim();
 
     if (!name || !phone) {
       alert('Please fill in your name and phone number.');
       return;
     }
 
-    // Build WhatsApp message and send to primary number
-    const msg = `Hello, I need legal consultation.%0A%0AName: ${encodeURIComponent(name)}%0APhone: ${encodeURIComponent(phone)}%0AMatter: ${encodeURIComponent(matter || 'Not specified')}%0ADescription: ${encodeURIComponent(desc || 'Not provided')}`;
+    const msg = `Hello, I need legal consultation.%0A%0AName: ${encodeURIComponent(name)}%0APhone: ${encodeURIComponent(phone)}%0AEmail: ${encodeURIComponent(email || 'Not provided')}%0AMatter: ${encodeURIComponent(matter || 'Not specified')}%0ADescription: ${encodeURIComponent(desc || 'Not provided')}`;
+    
     window.open(`https://wa.me/917541010256?text=${msg}`, '_blank');
 
     document.getElementById('contactForm').style.display = 'none';
     document.getElementById('formSuccess').style.display = 'block';
   }
-
-  // Navbar scroll effect
-  window.addEventListener('scroll', () => {
-    const nav = document.querySelector('nav');
-    if (window.scrollY > 60) {
-      nav.style.padding = '1rem 4rem';
-    } else {
-      nav.style.padding = '1.4rem 4rem';
-    }
-  });
 </script>
+
 </body>
 </html>
